@@ -123,6 +123,7 @@ form.search-bar:focus-within {
 .link-container{
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 .link-box{
 /*  width: 100px;
