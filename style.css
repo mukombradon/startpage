@@ -11,55 +11,62 @@ body {
 
 /*CLOCK OF CLOCK STYLE*/
 
-    #digit {
-      display: flex;
-      align-items: center;
-      gap: 10px; /* reduced spacing between digits */
-      padding-bottom :40px  ;
-    }
+#digit {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* reduced spacing between digits */
+}
 
-    .digit {
-      display: grid;
-      grid-template-rows: repeat(6, 1fr);
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2px; /* smaller gaps between clocks */
-    }
+.digit {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px; /* smaller gaps between clocks */
+}
 
-    .clock {
-      width: 15px;  /* smaller clock size */
-      height: 15px;
-      background: oklch(20% 0 0);
-      border: 0.1rem solid oklch(30% 0 0);
-      border-radius: 50%;
-      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
-      position: relative;
-    }
+.clock {
+  width: 15px;  /* smaller clock size */
+  height: 15px;
+  background: oklch(20% 0 0);
+  border: 0.1rem solid oklch(30% 0 0);
+  border-radius: 50%;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
 
-    .hour, .minute {
-      position: absolute;
-      width: 50%;
-      height: 1.5px; /* thinner hands */
-      background: oklch(90% 0 0); /* color of clock hands */
-      border-radius:30px ;
-      top: 50%;
-      left: 50%;
-      transform-origin: left center;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
+.hour, .minute {
+  position: absolute;
+  width: 50%;
+  height: 1.5px; /* thinner hands */
+  background: oklch(90% 0 0); /* color of clock hands */
+  border-radius:30px ;
+  top: 50%;
+  left: 50%;
+  transform-origin: left center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-    .clock.inactive .hour,
-    .clock.inactive .minute {
-      opacity: 0.3;
-    }
+.clock.inactive .hour,
+.clock.inactive .minute {
+  opacity: 0.3;
+}
 
-    /* Colon styling */
-    .colon-text {
-      font-size: 50px; /* smaller colon */
-      font-weight: 600;
-      color: #fff;
-      line-height: 0;
-      transform: translateY(-10px);
-    }
+/* Colon styling */
+.colon-text {
+  font-size: 50px; /* smaller colon */
+  font-weight: 600;
+  color: #fff;
+  line-height: 0;
+  transform: translateY(-10px);
+}
+#date {
+  font-size: 1.5em;
+  border-radius: 12px;
+  color: oklch(90% 0 0);
+  text-align: center;
+  padding-top :10px  ;
+  padding-bottom :40px  ;
+}
 
 /* SEARCH BAR STYLES */
 form.search-bar {
@@ -72,6 +79,7 @@ form.search-bar {
   padding: 0.5rem 1rem;
   box-shadow: 0 1px 3px oklch(23% 0 0);
   transition: box-shadow 0.2s ease, background-color 0.2s ease;
+  margin-bottom: 20px;
 }
 
 form.search-bar:focus-within {
@@ -109,4 +117,37 @@ form.search-bar:focus-within {
 
 .search-bar button:hover svg {
   fill: oklch(90% 0 0); /* ChatGPT green accent on hover */
+}
+
+/*LINK CONTAINER*/
+.link-container{
+  display: flex;
+  justify-content: center;
+}
+.link-box{
+/*  width: 100px;
+  height: 100px;*/
+  border: 0.1rem solid oklch(30% 0 0);
+  border-radius: 10px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: oklch(30% 0 0);
+  color: oklch(80% 0 0);
+  padding: 10px;
+
+}
+.icon-links{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+.link-box i{
+  font-size: 40px;
+  padding: 5px;
+}
+.link-box p{
+  text-align: center;
+  padding-bottom:10px ;
+  margin: 0;
 }

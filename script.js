@@ -144,3 +144,20 @@
 
     setInterval(renderTime, 1000);
     renderTime();
+    
+      function updateDate() {
+      const now = new Date();
+      const options = { 
+        weekday: 'long', 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+      };
+      document.getElementById('date').textContent = now.toLocaleDateString(undefined, options);
+    }
+
+    // Update immediately when the page loads
+    updateDate();
+
+    // Refresh every minute (60000 milliseconds)
+    setInterval(updateDate, 60000);
