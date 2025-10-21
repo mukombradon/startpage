@@ -16,6 +16,7 @@ Features
 - Customizable – Add or modify your own categories and icons in the HTML.
 
 Project Structure
+
 bradon-flow/
 │
 
@@ -32,21 +33,21 @@ bradon-flow/
 ⚙️ Setup and Usage
 
 1. Clone or Download the repository:
-  -git clone https://github.com/mukombradon/startpage.git
+  - git clone https://github.com/mukombradon/startpage.git
 2. Open the project folder in your code editor (e.g. VS Code).
 3. Run locally
-  -Simply open index.html in your browser 
+  - Simply open index.html in your browser 
 4. Customize your links or icons by editing the <div class="link-box"> sections in the HTML.
 
 Technologies Used
 
--HTML5
+- HTML5
 
--CSS3
+- CSS3
 
--JavaScript (Vanilla)
+- JavaScript (Vanilla)
 
--Font Awesome Icons
+- Font Awesome Icons
 
 Preview
 
