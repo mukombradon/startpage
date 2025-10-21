@@ -5,9 +5,9 @@ It combines a live date & time display, a Google-powered search bar, and categor
 
 Features
 
-- Live Clock & Date Display** – Automatically updates the current time and date.
-- Integrated Google Search** – Search directly from the dashboard.
-- Quick Access Links** – Organized into categories:
+- Live Clock & Date Display – Automatically updates the current time and date.
+- Integrated Google Search – Search directly from the dashboard.
+- Quick Access Links – Organized into categories:
 - Google (Gmail, YouTube, Drive, Gemini)
 - Socials (Twitter/X, Reddit, Discord, WhatsApp)
 - Productivity (Canva, GitHub, Typing Club, Notion)
@@ -18,10 +18,15 @@ Features
 Project Structure
 bradon-flow/
 │
+
 ├── index.html # Main HTML file
+
 ├── style.css # Stylesheet for layout and design
+
 ├── script.js # Handles dynamic features (clock, etc.)
+
 ├── favicon_io/ # Favicon files
+
 └── README.md # Project documentation
 
 ⚙️ Setup and Usage
