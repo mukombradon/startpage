@@ -124,7 +124,6 @@ form.search-bar:focus-within {
 .link-container{
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  place-items: center;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   gap: 20px;
