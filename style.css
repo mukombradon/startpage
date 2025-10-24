@@ -15,6 +15,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px; /* reduced spacing between digits */
+  padding-left: 40px;   
 }
 
 .digit {
@@ -121,7 +122,10 @@ form.search-bar:focus-within {
 
 /*LINK CONTAINER*/
 .link-container{
-  display: flex;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   gap: 20px;
 }
